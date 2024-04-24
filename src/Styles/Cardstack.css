@@ -1,0 +1,32 @@
+.theStack {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.blackCard{
+    width: 80%;
+    height: 40px;
+    background-color: black;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.purpleCard{
+    width: 80%;
+    height: 40px;
+    background-color: purple;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-top: -5px;
+}
+
+.redCard{
+    width: 80%;
+    height: 180px;
+    background-color: red;
+    border-radius: 8px;
+    margin-top: -5px;
+}

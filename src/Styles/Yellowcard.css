@@ -1,0 +1,13 @@
+.cardwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ycard {
+    width: 80%;
+    height: 180px;
+    background-color: rgb(248, 186, 70);
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.50);
+}
