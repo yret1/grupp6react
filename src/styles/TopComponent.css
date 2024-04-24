@@ -1,0 +1,14 @@
+.headwrapper {
+  height: 100px;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.headline {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}

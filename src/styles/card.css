@@ -1,0 +1,47 @@
+*{
+  font-family: PT Mono;
+}
+
+.card__font-small {
+font-size: 12px;
+text-transform: uppercase;
+}
+
+.card__font-medium {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card__font-large {
+  font-size:29px;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+}
+
+.card-component{
+  width: 380px;
+  height:240px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #D0D0d0;
+  padding:16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__header, .card__bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.card__chip {
+}
+
+.card__number {
+  text-align: center;
+}
+
+.card__vendor {
+  margin-top:10px; 
+}
