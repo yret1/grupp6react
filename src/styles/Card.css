@@ -1,21 +1,89 @@
-.card {
-    width: 100%;
-    margin: 5px;
-    border-radius: 15px;
-    padding: 6px;
-    background-color: gainsboro;
-
+.card{
+    background-color: #ffb647;
+    max-width: 100%;
+    height: 241px;
+    margin: 16px;
+    padding: 20px;
+    border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+.card.bitcoin{
+    background-color: #ffb647;
+}
+
+.card.ninja-bank{
+    background-color: #3a3a3a;
+}
+
+.card.block-chain{
+    background-color: #7b4edd;
+}
+
+.card.evil-corp{
+    background-color: #d92e4c;
+}
+
+.icon{
+    width: 32px;
+}
+
+.icon-company{
+    background-image: url("/bitcoin-logo.png");
+    width: 35px;
+    height: 38px;
+    background-repeat: no-repeat; 
+}
+
+.icon-company.ninja-bank{
+    background-image: url("/ninja-bank.png");
+    
+}
+
+.icon-company.block-chain{
+    background-image: url("/block-chain.png");
+    width: 38px;
+    height: 38px;
+}
+
+.icon-company.evil-corp{
+    background-image: url("/evil-corp.png");
+    width: 38px;
+    height: 38px;
+}
+
+.chip{
+    display: flex;
     flex-direction: column;
 }
 
-.toppart {
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
+.all-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-number{
+    font-family: "PT Mono", monospace;
+    font-size: 25px;
+}
+
+.card-small-text{
+    font-family: "PT Mono", monospace;
+    font-size: 12px;
+}
+.card-text{
+    font-family: "PT Mono", monospace;
+    font-size: 18px;
+}
+
+
+.card-details{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
+
