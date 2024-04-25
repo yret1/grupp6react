@@ -1,5 +1,4 @@
 
-
 .cardForm {
   width: 380px;
   height: auto;
@@ -16,6 +15,7 @@
   display: block;
   font-size: 12px;
   text-transform: uppercase;
+  font-family: PT Mono;
 }
 
 .cardForm__input {

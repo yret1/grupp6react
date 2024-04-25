@@ -1,47 +1,89 @@
-*{
-  font-family: PT Mono;
+.card{
+    background-color: #ffb647;
+    max-width: 100%;
+    height: 241px;
+    margin: 16px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+.card.bitcoin{
+    background-color: #ffb647;
 }
 
-.card__font-small {
-font-size: 12px;
-text-transform: uppercase;
+.card.ninja-bank{
+    background-color: #3a3a3a;
 }
 
-.card__font-medium {
-  font-size: 18px;
-  text-transform: uppercase;
+.card.block-chain{
+    background-color: #7b4edd;
 }
 
-.card__font-large {
-  font-size:29px;
-  letter-spacing: 3%;
-  text-transform: uppercase;
+.card.evil-corp{
+    background-color: #d92e4c;
 }
 
-.card-component{
-  width: 380px;
-  height:240px;
-  margin: auto;
-  border-radius: 8px;
-  background-color: #D0D0d0;
-  padding:16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.icon{
+    width: 32px;
 }
 
-.card__header, .card__bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.card__chip {
-}
-
-.card__number {
-  text-align: center;
+.icon-company{
+    background-image: url("/bitcoin-logo.png");
+    width: 35px;
+    height: 38px;
+    background-repeat: no-repeat; 
 }
 
-.card__vendor {
-  margin-top:10px; 
+.icon-company.ninja-bank{
+    background-image: url("/ninja-bank.png");
+    
 }
+
+.icon-company.block-chain{
+    background-image: url("/block-chain.png");
+    width: 38px;
+    height: 38px;
+}
+
+.icon-company.evil-corp{
+    background-image: url("/evil-corp.png");
+    width: 38px;
+    height: 38px;
+}
+
+.chip{
+    display: flex;
+    flex-direction: column;
+}
+
+.all-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.card-number{
+    font-family: "PT Mono", monospace;
+    font-size: 25px;
+}
+
+.card-small-text{
+    font-family: "PT Mono", monospace;
+    font-size: 12px;
+}
+.card-text{
+    font-family: "PT Mono", monospace;
+    font-size: 18px;
+}
+
+
+.card-details{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
