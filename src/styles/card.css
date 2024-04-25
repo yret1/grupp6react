@@ -16,14 +16,17 @@
 
 .card.ninja-bank{
     background-color: #3a3a3a;
+    color:white;
 }
 
 .card.block-chain{
     background-color: #7b4edd;
+    color:white;
 }
 
 .card.evil-corp{
     background-color: #d92e4c;
+    color:white;
 }
 
 .icon{
@@ -74,10 +77,12 @@
 .card-small-text{
     font-family: "PT Mono", monospace;
     font-size: 12px;
+    text-transform: uppercase;
 }
 .card-text{
     font-family: "PT Mono", monospace;
     font-size: 18px;
+    text-transform: uppercase;
 }
 
 

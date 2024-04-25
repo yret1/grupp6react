@@ -32,9 +32,9 @@ const CardForm = () => {
           <label htmlFor="cardNumber" className="cardForm__label">Valid Thru:</label>
           <input
             type="text"
-            id="cardNumber"
-            //value={cardNumber}
-            //onChange={handleCardNumberChange}
+            id="cardValidity"
+            //value={cardValidity}
+            //onChange={handleCardValidityChange}
             className="cardForm__input"
             placeholder=""
           />
@@ -43,9 +43,9 @@ const CardForm = () => {
           <label htmlFor="cardNumber" className="cardForm__label">CCV</label>
           <input
             type="text"
-            id="cardNumber"
-            //value={cardHolderName}
-            //onChange={handleCardHolderNameChange}
+            id="cardCCV"
+            //value={cardCCV}
+            //onChange={handleCardCCVChange}
             className="cardForm__input"
             placeholder=""
           />            
@@ -54,7 +54,9 @@ const CardForm = () => {
         </div>
         <div className="cardForm__inputContainer">
           <label htmlFor="vendor" className="cardForm__label">Vendor:</label>
-          <select id="vendor" className="cardForm__input">
+          <select id="vendor" className="cardForm__input"
+           //onChange={handleCardVendorChange}
+           >
             <option value="vendor1">Bitcoin INC</option>
             <option value="vendor2">Ninja Bank</option>
             <option value="vendor3">Block chain INC</option>
