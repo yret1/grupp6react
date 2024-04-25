@@ -14,6 +14,14 @@
     border-top-right-radius: 8px;
 }
 
+.blackCardsection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: white;
+}
+
 .purpleCard{
     width: 80%;
     height: 40px;
@@ -23,10 +31,80 @@
     margin-top: -5px;
 }
 
+.purpleCardsection {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 10px;
+color: white;
+}
+
 .redCard{
     width: 80%;
     height: 180px;
     background-color: red;
     border-radius: 8px;
     margin-top: -5px;
+}
+
+.redCardicons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.redCardnr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.rednr {
+    color: white;
+    margin-right: 5px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: 700;
+}
+
+.rcardInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rCardholder {
+    margin-top: 30px;
+    margin-left: 10px;
+    font-family: monospace;
+}
+
+.rcardholderName {
+    color: rgb(198, 196, 196);
+}
+
+.rName {
+    color: white;
+    font-size: large;
+}
+
+.rValid {
+    margin-top: 30px;
+    margin-right: 10px;
+    font-family: monospace;
+}
+
+.rvalidThru {
+    color: rgb(198, 196, 196);
+}
+
+.rvalidDate {
+    color: white;
+    margin-left: 28px;
+    font-size: large;
 }
