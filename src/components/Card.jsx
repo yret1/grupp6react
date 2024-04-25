@@ -1,18 +1,36 @@
 
 import "../styles/Card.css"
-import wifi from "../assets/wifi.svg"
-import btc from "../assets/btc.svg"
 
-
-const Card = () => {
+const Card = ({variant}) => {
   return (
-    <section className="card">
+    
+<section className={`card ${variant}`}>
 
-        <section className="toppart">
-            <img src={wifi} alt="NFC" />
-            <img src={btc} alt="Cardtype" />
-        </section>
-    </section>
+  <article className="all-icons">
+    <article className="chip">
+      <img className="icon" src="/wifi.png"></img>
+      <img className="icon" src="/chip.png"></img>
+    </article>
+    <article className={`icon-company ${variant}`}></article>
+  </article>
+
+  <article className="card-info">
+
+  </article>
+  <p className="card-number">1234 5678 9101 1123</p>
+
+  <article className="card-details">
+    <article>
+        <p className="card-small-text">CARDHOLDER NAME</p>
+        <p className="card-text">John Doe</p>
+      </article>
+      <article>
+        <p className="card-small-text">VALID THRU</p>
+        <p className="card-text">12/24</p>
+      </article>
+    </article>
+  </section>
+
   )
 }
 
