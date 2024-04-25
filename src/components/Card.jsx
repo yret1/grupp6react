@@ -1,28 +1,36 @@
-import React from 'react'
-import '../styles/card.css'
 
-const Card = () => {
+import "../styles/Card.css"
+
+const Card = ({variant}) => {
   return (
-    <div className="card-component">
-      <div className="card__header">
-        <div className="card__chip"><img src='./src/assets/Chip.svg' alt="chip"></img></div>
-        <div className ="card__vendor"><img src='./src/assets/Ninja.svg' alt="bitcoin logo"></img></div>
-        
-      </div>
-    <div className ="card__number">
-      <p className="card__font-large">xxxx xxxx xxxx xxxx</p>
-    </div>
-    <div className="card__bottom">
-      <div className="card__name" >
-        <p className="card__font-small">cardholder name</p>
-        <p className="card__font-medium">FIRSTNAME LASTNAME</p>
-      </div>
-      <div className="card__validity">
-        <p className="card__font-small">VALID THRU</p>
-        <p className="card__font-medium">MM/YY</p>
-      </div>
-    </div>
-  </div>
+    
+<section className={`card ${variant}`}>
+
+  <article className="all-icons">
+    <article className="chip">
+      <img className="icon" src="/wifi.png"></img>
+      <img className="icon" src="/chip.png"></img>
+    </article>
+    <article className={`icon-company ${variant}`}></article>
+  </article>
+
+  <article className="card-info">
+
+  </article>
+  <p className="card-number">1234 5678 9101 1123</p>
+
+  <article className="card-details">
+    <article>
+        <p className="card-small-text">CARDHOLDER NAME</p>
+        <p className="card-text">John Doe</p>
+      </article>
+      <article>
+        <p className="card-small-text">VALID THRU</p>
+        <p className="card-text">12/24</p>
+      </article>
+    </article>
+  </section>
+
   )
 }
 

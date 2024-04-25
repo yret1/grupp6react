@@ -1,11 +1,11 @@
-import React from 'react'
-import '../styles/TopComponent.css'
+
+import "../styles/TopComponent.css";
 
 const TopComponent = () => {
   return (
-    <section className="headwrapper">
-      <h1 className="headline">E-Wallet</h1>
-    </section>
+   <section className="headwrapper">
+     <h1 className="headline">E-Wallet</h1>
+   </section>
   )
 }
 
