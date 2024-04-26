@@ -1,0 +1,9 @@
+.card-stack-container {
+    position: relative;
+    height: 500px;
+}
+
+.card-stack {
+    position: absolute;
+    width: 100%;
+}
