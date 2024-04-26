@@ -1,0 +1,50 @@
+.cardform {
+    width: 520px;
+    font-family: 'PT Mono', sans-serif;
+}
+.cardformsmall-1 {
+    font-family: 'PT Mono', sans-serif;
+    display: inline-flex;
+    flex-direction: column;
+}
+.cardformsmall-2 {
+    font-family: 'PT Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.cardformsmall-wrapper {
+    width: 100%;
+    font-family: 'PT Mono', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    justify-content: space-between;
+}
+.cardformsection {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+}
+.cardformtext {
+    font-size: 12px;
+    margin-bottom: 1px;
+}
+.input, .option {
+    height: 56px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: 'PT Mono', sans-serif;
+    padding: 5px;
+    border-radius: 7px;
+}
+.input-valid {
+    width: 180px;
+    height: 56px;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: 'PT Mono', sans-serif;
+    padding: 5px;
+}
