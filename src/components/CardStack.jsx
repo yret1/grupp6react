@@ -1,20 +1,23 @@
-import React from 'react';
+/* eslint-disable react/prop-types */
 import Card from './Card';
 import "../styles/CardStack.css";
 
-const CardStack = () => {
+const CardStack = ({cards, setActive}) => {
 
-  const cards = ["ninja-bank", "block-chain", "evil-corp"];
+
+  const height = 240 + (cards.length * 40);
 
   return (
-    <div className='card-stack-container'>
-      {cards.map((variant, index) => (
+    <div className='card-stack-container'
+    style={{height: `${height}px`}}>
+      {cards.map((card, index) => (
         <div
+          onClick={() => setActive(card)}
           className="card-stack"
           style={{ top: `${index * 40}px` }}
-          key={variant}
+          key={card.number}
         >
-          <Card variant={variant}/>
+          <Card name={card.name} number={card.number} validity={card.validity} vendor={card.vendor} />
         </div>
       ))}
     </div>

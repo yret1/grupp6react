@@ -1,0 +1,37 @@
+.newcard {
+
+    border-radius: 5px;
+    border: 1px soild black;
+
+
+    width: 95%;
+    height: 60px;
+    background-color: white;
+    margin-bottom: 10px;
+
+    color: black;
+}
+
+.addcard {
+    border-radius: 5px;
+    border: 1px soild black;
+
+    margin-bottom: 10px;
+
+
+    width: 95%;
+    font-size: 20px;
+    font-weight: bold;
+    height: 60px;
+    color: white;
+    background-color: black;
+}
+
+
+.buttonwrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+}

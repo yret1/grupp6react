@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "../styles/CardFormComponent.css"
 
 const CardFormComponent = (props) => {
@@ -35,6 +36,31 @@ const CardFormComponent = (props) => {
 
 
 
+  const handleCardnumber = (e) => {
+
+    let input = e.target.value.replace(/\D/g, '');
+
+
+    if (input.length > 16) {
+      input = input.substr(0, 16);
+    }
+
+ let first = input.substr(0, 4);
+    let second = input.substr(4, 4);
+    let third = input.substr(8, 4);
+    let fourth = input.substr(12, 4);
+
+
+    let formattedInput = first + (second ? ' ' + second : '') + (third ? ' ' + third : '') + (fourth ? ' ' + fourth : '');
+
+    e.target.value = formattedInput
+
+    setNumber(formattedInput);
+
+  }
+
+
+
 
 
 
@@ -45,7 +71,7 @@ const CardFormComponent = (props) => {
     <section className="cardformsection">
         <form className='cardform'>
             <label className="cardformtext">CARD NUMBER</label><br/>
-            <input onChange={(e) => {setNumber(e.currentTarget.value)}}  className="input" type="number" /><br/>
+            <input onChange={handleCardnumber}  className="input" type="text" /><br/>
             <label className="cardformtext">CARDHOLDER NAME</label><br/>
             <input onChange={(e) => {setName(e.currentTarget.value)}} className="input"type="text" /><br/>
             <div className="cardformsmall-wrapper">
@@ -60,10 +86,10 @@ const CardFormComponent = (props) => {
             </div>
             <label className="cardformtext">VENDOR</label><br/>
             <select onChange={(e) => {setVendor(e.currentTarget.value)}} className="option" name="vendor">
-            <option value="Bitcoin INC">Bitcoin INC</option>
-            <option value="Ninja Bank">Ninja Bank</option>
-            <option value="Block Chain INC">Block Chain INC</option>
-            <option value="Evil Corp">Evil Corp</option>
+            <option value="bitcoin">Bitcoin INC</option>
+            <option value="ninja-bank">Ninja Bank</option>
+            <option value="block-chain">Block Chain INC</option>
+            <option value="evil-corp">Evil Corp</option>
             </select>
         </form>
     </section>

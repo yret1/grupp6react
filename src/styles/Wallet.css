@@ -1,0 +1,18 @@
+.cardplaceholder {
+    height: 241px;
+    width: 100%;
+    font-family: "Source Sans 3", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wallet {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
