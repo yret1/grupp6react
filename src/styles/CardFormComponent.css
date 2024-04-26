@@ -13,9 +13,11 @@
     flex-direction: column;
 }
 .cardformsmall-wrapper {
-    width: 390px;
+    width: 100%;
     font-family: 'PT Mono', sans-serif;
     display: flex;
+    align-items: center;
+    gap: 6px;
     justify-content: space-between;
 }
 .cardformsection {
@@ -31,7 +33,7 @@
 }
 .input, .option {
     height: 56px;
-    width: 390px;
+    width: 100%;
     margin-bottom: 10px;
     font-size: 26px;
     font-family: 'PT Mono', sans-serif;

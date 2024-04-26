@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 
 import "../styles/Card.css"
 
 const Card = ({variant}) => {
   return (
-    
 <section className={`card ${variant}`}>
 
   <article className="all-icons">
