@@ -1,5 +1,5 @@
 .cardform {
-    width: 520px;
+    width: 300px;
     font-family: 'PT Mono', sans-serif;
 }
 .cardformsmall-1 {
@@ -43,7 +43,7 @@
     border-radius: 7px;
 }
 .input-valid {
-    width: 180px;
+    width: 140px;
     height: 56px;
     margin-bottom: 10px;
     font-size: 26px;

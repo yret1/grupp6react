@@ -10,11 +10,15 @@ const Wallet = ({cards}) => {
 
   return (
     <section className="wallet">
-      {!active.number && 
-      <section className="cardplaceholder">
-        <h1 className="cardholdtext">Please Add or Select A Card</h1>
-      </section>}
-      {active.number && <Card name={active.name} number={active.number} validity={active.validity} vendor={active.vendor} />}
+
+{active.number ?
+  <Card name={active.name} number={active.number} validity={active.validity} vendor={active.vendor} /> 
+: 
+  <section className="cardplaceholder">
+    <h1 className="cardholdtext">Please Add or Select A Card</h1>
+  </section>
+}
+
       <CardStack setActive={setActive} cards={cards}/>
       <Button newcard={true}/>
 
