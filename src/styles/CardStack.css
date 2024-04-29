@@ -1,12 +1,12 @@
 .card-stack-container {
     position: relative;
-    width: 100vw;
+    width: 350px;
    min-height: 300px;
 }
 
 .card-stack {
     position: absolute;
-    width: 85%;
+    width: 100%;
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%)
